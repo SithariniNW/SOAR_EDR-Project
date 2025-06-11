@@ -2,11 +2,11 @@
 
 
 <h3 Resources Used </h3>
-<ul type="circle">
+<p> <ul type="circle">
  <li>Tines - Security Ooperations Automation Response Platform</li>
  <li>LimaCharlie - Endpoint Detection Response Platform</li>
  <li>Windows Virtual Machine as an agent</li>
-</ul>
+</ul> </p>
 
 
 <h3>Overview</h3>
