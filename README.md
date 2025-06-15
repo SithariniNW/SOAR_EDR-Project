@@ -14,11 +14,14 @@ The lab consists of creating a home SOC using Microsoft Azure.
 
 <br>A virtual machine acts as the honeypot to attract potential attackers to attempt failed login attempts. These failed attack attempts are logged in a central repository that will be configured to an SIEM (Microsoft Sentinel) and queried to create an attack map.
 
-<h3>Initial Set up</h3>
+<h3>Part 1 - Diagram</h3>
 
-First, a resource group within Microsoft Azure is created to host cloud resources for the project. Then a virtual machine named <b> Honeypot VM </b> is made within a virtual network which will be used as a target for potential attackers. 
+The purpose of this part of the project is to create a playbook workflow and brainstorm actions taken by the mentioned playbook.
 
-<br> Both the network security group or cloud firewall and the default Windows firewalls within the virtual machine are turned off to heighten the vulnerability of the machine.
+<br> <h1> Playbook Objective </h1>
+<ul type="circle"> 
+  <li> Send a Slack message and email containing information about the detection </li>
+  <li> Generate user prompt to action necessary precautions </li> </ul>
 
 <br> <img src="Images/Screenshot 2025-02-13 152426.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
 
