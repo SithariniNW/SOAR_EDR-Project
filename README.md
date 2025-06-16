@@ -25,11 +25,24 @@ The purpose of this part of the project is to create a playbook workflow and bra
 
 <br> <img src="Images/Screenshot 2025-02-13 152426.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
 
-<br> <img src="Images/Screenshot 2025-02-13 152556.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
+Story - Tines
+Create detection in LimaCharlie - Detect HackTool > Tines > Slack & Email
 
-<br> <img src="Images/Screenshot 2025-02-16 225508.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
+Slack and email will contain
+- Time
+- Computer name
+- Source IP
+- Process
+- Command Line
+- File Path
+- Sensor ID
+- Link to detection if applicable
 
-After the creation of the initial architecture, I tried connecting to the created virtual machine through Windows Remote Desktop Connection. However, it was unsuccessful since the VM did not allow RDP connections. Therefore an inbound rule had to be configured to allow RDP connections and remotely connect to the VM.
+Tines > Prompt user to isolate the machine (YES/NO)
+- if yes = LimaCharlie should automatically isolate the machine and a message should be sent to Slack
+- Message: Isolation status with note of "The Computer has been isolated"
+- If not = LimaCharlie will not isolate
+- Message: Isolation statis with note of "The Computer was not isolated, please investigate"
 
 <br> <img src="Images/Screenshot 2025-02-13 221617.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
 
