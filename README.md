@@ -1,11 +1,12 @@
 <h1 style="color:blue;"> SOAR EDR Project</h1>
 
 
-<h3 Resources Used </h3>
+<h3> Resources Used </h3>
 <p> <ul type="circle">
  <li>Tines - Security Ooperations Automation Response Platform</li>
  <li>LimaCharlie - Endpoint Detection Response Platform</li>
  <li>Windows Virtual Machine as an agent</li>
+ <li></li>
 </ul> </p>
 
 
