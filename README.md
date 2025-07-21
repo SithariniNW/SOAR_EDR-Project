@@ -13,9 +13,10 @@
 <h3>Overview</h3>
 The lab consists of gaining hands-on experience with the use of SOAR and EDR platforms.
 
-<br>SOAR implementations are increasingly used by a wide variety of Security Operations Centres (SOC) to reduce repetitive tasks and automate their processes. Security processes are developed as playbooks by professionals in SOAR platforms to enable integration with various tools and systems across the security infrastructure. 
+<br>SOAR implementations are increasingly used by a wide variety of Security Operations Centres (SOC) to reduce repetitive tasks and automate their processes. Security processes are developed as playbooks by professionals in SOAR platforms to enable integration with various tools and systems across the security infrastructure.<br>
 
-The SOAR vendor used for this product is Tines, while Limacharlie is used as the EDR vendor.
+In this lab, a detection rule is implemented in LimaCharlie to identify a hacking tool known as LaZagne, which is used to extract stored passwords from a machine. Upon detection, an alert is sent to Tines, where an automated playbook (story) is triggered. This story alerts the user via email and Slack, notifying them of the potential infiltration. Additionally, it prompts the user to decide whether to isolate the infected machine, and based on the response, the system proceeds to carry out the appropriate action.
+
 
 <h3>Part 1 - Diagram</h3>
 
