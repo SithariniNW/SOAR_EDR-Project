@@ -6,14 +6,16 @@
  <li>Tines - Security Ooperations Automation Response Platform</li>
  <li>LimaCharlie - Endpoint Detection Response Platform</li>
  <li>Windows Virtual Machine as an agent</li>
- <li></li>
+ <li>Slack - Messaging Channel </li>
 </ul> </p>
 
 
 <h3>Overview</h3>
-The lab consists of creating a home SOC using Microsoft Azure. 
+The lab consists of gaining hands-on experience with the use of SOAR and EDR platforms.
 
-<br>A virtual machine acts as the honeypot to attract potential attackers to attempt failed login attempts. These failed attack attempts are logged in a central repository that will be configured to an SIEM (Microsoft Sentinel) and queried to create an attack map.
+<br>SOAR implementations are increasingly used by a wide variety of Security Operations Centres (SOC) to reduce repetitive tasks and automate their processes. Security processes are developed as playbooks by professionals in SOAR platforms to enable integration with various tools and systems across the security infrastructure. 
+
+The SOAR vendor used for this product is Tines, while Limacharlie is used as the EDR vendor.
 
 <h3>Part 1 - Diagram</h3>
 
