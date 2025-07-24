@@ -29,30 +29,14 @@ For part 1 of the project, the main objective is to create a playbook workflow t
 
 <br> <img src="Images/Workflow.drawio.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
 
-Story - Tines
-Create detection in LimaCharlie - Detect HackTool > Tines > Slack & Email
+<h4> User Prompt Explanation</h4>
 
-Slack and email will contain
-- Time
-- Computer name
-- Source IP
-- Process
-- Command Line
-- File Path
-- Sensor ID
-- Link to detection if applicable
-
-Tines > Prompt user to isolate the machine (YES/NO)
-- if yes = LimaCharlie should automatically isolate the machine and a message should be sent to Slack
+Tines will prompt the user to ask whether to isolate or not infect the machine (YES/NO)
+- if YES = LimaCharlie should automatically isolate the machine and a message should be sent to Slack
 - Message: Isolation status with note of "The Computer has been isolated"
-- If not = LimaCharlie will not isolate
-- Message: Isolation statis with note of "The Computer was not isolated, please investigate"
+- If NO = LimaCharlie will not isolate
+- Message: Isolation status with note of "The Computer was not isolated, please investigate"
 
-<br> <img src="Images/Screenshot 2025-02-13 221617.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
-
-<br> <img src="Images/Screenshot 2025-02-13 220114.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
-
-<br> Then within the VM, Windows Firewall settings were completely turned off, to ensure that the machine was completely vulnerable. This can be tested by sending a ping request to the VM through the host machine. Which became successful since it is open to making connections.
 
 <br> <img src="Images/Screenshot 2025-02-16 153308.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
 
