@@ -22,12 +22,12 @@ In this lab, a detection rule is implemented in LimaCharlie to identify a hackin
 
 For part 1 of the project, the main objective is to create a playbook workflow through a diagram. This is created using a site called <b> draw.io </b>
 
-<br> <h1> Playbook Objective </h1>
+<h4> Playbook Objective </h4>
 <ul type="circle"> 
   <li> Send a Slack message and email containing information about the detection </li>
   <li> Generate user prompt to action necessary precautions </li> </ul>
 
-<br> <img src="Images/Workflow.drawio.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
+<br> <img src="Images/Workflow.drawio.png" height="60%" width="60%" alt="PlayBook Workflow" align="center"/>
 
 <h4> User Prompt Explanation</h4>
 
@@ -37,45 +37,11 @@ Tines will prompt the user to ask whether to isolate or not infect the machine (
 - If NO = LimaCharlie will not isolate
 - Message: Isolation status with note of "The Computer was not isolated, please investigate"
 
+<h3>Part 2 - Setup LimaCharlie and Virtual Machine</h3>
 
-<br> <img src="Images/Screenshot 2025-02-16 153308.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
+The first step in this part was to create the Windows virtual machine that will act as the infected machine in this scenario. This was done by downloading the Windows 10 ISO image and creating a VM through Oracle VirtualBox.After the setup of the machine, I used the browser in the machine itself to access LimaCharlie. 
 
-<h3>Log Repository Creation</h3>
-
-For the use of our log repository, a Log Analytics Workspace is created within Microsoft Azure.
-
-<br> <img src="Images/Screenshot 2025-02-13 154136.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
-
-To analyze the collected log data further using an SIEM, a  Microsoft Sentinel instance is also created and connected to the log analytics workspace. 
-
-<br> <img src="Images/Screenshot 2025-02-13 213622.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
-
-<br> Furthermore, a connection between the VM and log analytics workspace should also be created. This is done through several steps,
-<ul>
- <li> Installing Windows Security Events in Sentinel</li>
- <li> Installing Windows Security Events via AMA package </li>
- <li> Configure data connection rule (allows VM to forward security logs to log analytics workspaces) </li>
-</ul>
-
-<br> <img src="Images/Screenshot 2025-02-17 170046.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
-
-<br> After the above steps are completed, the logs at the created Log Analytics Workspaces will be able to display logs regarding any activities taking place within the VM.
-
-<br> <img src="Images/Screenshot 2025-02-17 220447.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
-
-<h3> Querting log repository using KQL</h3>
-
-KQL or Kusto Query Language is a tool in Microsoft Azure similar to SQL that can be used to explore and filter data.
-
-<br> KQL can be used to filter through the many security events that occur within the VM to narrow down specific events. As an example to analyze results that indicate a failed login attempt the following query can be used,
-
-<br> <img src="Images/Screenshot 2025-02-18 213548.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
-
-<h3> Uploading data to SIEM </h3>
-
-Using a table of geographical locations of IP address ranges combined with the security event logs of the VM, a mapping of the locations of the attacks can be created through the Microsoft Sentinel SIEM.
-
-<br> <img src="Images/Screenshot 2025-02-17 230830.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
+In LimaCharlie, I created a new installation key which can be used to connect the machine with LimaCharlie through PowerShell.
 
 <h3> Conclusion </h3>
 
