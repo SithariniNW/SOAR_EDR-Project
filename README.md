@@ -18,9 +18,9 @@ The lab consists of gaining hands-on experience with the use of SOAR and EDR pla
 In this lab, a detection rule is implemented in LimaCharlie to identify a hacking tool known as LaZagne, which is used to extract stored passwords from a machine. Upon detection, an alert is sent to Tines, where an automated playbook (story) is triggered. This story alerts the user via email and Slack, notifying them of the potential infiltration. Additionally, it prompts the user to decide whether to isolate the infected machine, and based on the response, the system proceeds to carry out the appropriate action.
 
 
-<h3>Part 1 - Diagram</h3>
+<h3>Part 1 - Diagram and Playbook Overview</h3>
 
-The purpose of this part of the project is to create a playbook workflow and brainstorm actions taken by the mentioned playbook.
+For part 1 of the project, the main objective is to create a playbook workflow through a diagram
 
 <br> <h1> Playbook Objective </h1>
 <ul type="circle"> 
