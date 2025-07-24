@@ -20,14 +20,14 @@ In this lab, a detection rule is implemented in LimaCharlie to identify a hackin
 
 <h3>Part 1 - Diagram and Playbook Overview</h3>
 
-For part 1 of the project, the main objective is to create a playbook workflow through a diagram
+For part 1 of the project, the main objective is to create a playbook workflow through a diagram. This is created using a site called <b> draw.io </b>
 
 <br> <h1> Playbook Objective </h1>
 <ul type="circle"> 
   <li> Send a Slack message and email containing information about the detection </li>
   <li> Generate user prompt to action necessary precautions </li> </ul>
 
-<br> <img src="Images/Screenshot 2025-02-13 152426.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
+<br> <img src="Images/Workflow.drawio.png" height="60%" width="60%" alt="Virtual Machine creation" align="center"/>
 
 Story - Tines
 Create detection in LimaCharlie - Detect HackTool > Tines > Slack & Email
